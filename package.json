@@ -4,7 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sync": "bash scripts/sync_raw.sh",
+    "process": "node lib/process_raw.js",
+    "reset": "node lib/reset_raw.js"
   },
   "author": "",
   "license": "ISC",
