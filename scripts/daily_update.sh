@@ -12,7 +12,7 @@ export OUT_DIR="/mnt/data/gauge-data"
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 LOG_DIR="$REPO_DIR/logs"
 LOG_FILE="$LOG_DIR/daily_update.log"
-NODE_BIN="$(command -v node)"
+NODE_BIN="/home/ubuntu/.nvm/versions/node/v22.15.1/bin/node"
 
 mkdir -p "$LOG_DIR"
 
