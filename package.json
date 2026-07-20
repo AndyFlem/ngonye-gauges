@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "sync": "bash scripts/sync_raw.sh",
     "process": "node lib/process_raw.js",
+    "build-annual": "node lib/build_annual_summaries.js",
     "reset": "node lib/reset_raw.js"
   },
   "author": "",
