@@ -1,17 +1,41 @@
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, onMounted, inject } from 'vue'
 import { csvParse, autoType } from 'd3-dsv'
+import PlotlyChart from '@/components/PlotlyChart.vue'
 
-const BASE_URL = 'https://data.westernpower.org/gauge-data/annual/'
+const ANNUAL_URL = 'https://data.westernpower.org/gauge-data/annual/'
 
-const annual = ref([])
 // One entry per file; `rows` holds that CSV's contents as an array of row objects.
-const datasets = ref([])
+const annualFiles = ref([])
 const loading = ref(true)
 const error = ref(null)
 
-async function listFiles() {
-  const res = await fetch(BASE_URL)
+// const colors = inject('colors')
+const font = inject('font')
+// const months = inject('months')
+// const makeTrans = inject('makeTrans')
+
+async function loadAll() {
+  loading.value = true
+  error.value = null
+  try {
+    const files = await listFiles(ANNUAL_URL)
+    // Fetch and parse every CSV in parallel; each element's `rows` is that file's contents.
+    annualFiles.value = await Promise.all(
+      files.map(async (file) => {
+        const rows = await fetchCsv(file.url)
+        return { ...file, rows }
+      }),
+    )
+  } catch (e) {
+    error.value = e.message
+  } finally {
+    loading.value = false
+  }
+}
+
+async function listFiles(url) {
+  const res = await fetch(url)
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`)
   const html = await res.text()
 
@@ -25,7 +49,7 @@ async function listFiles() {
       const cells = row.querySelectorAll('td')
       return {
         name: link.getAttribute('href'),
-        url: new URL(link.getAttribute('href'), BASE_URL).href,
+        url: new URL(link.getAttribute('href'), ANNUAL_URL).href,
         lastModified: cells[2]?.textContent.trim() ?? '',
         size: cells[3]?.textContent.trim() ?? '',
       }
@@ -34,106 +58,133 @@ async function listFiles() {
 }
 
 async function fetchCsv(url) {
-  const res = await fetch(url)
+  const res = await fetch(`${url}?t=${Date.now()}`)
   if (!res.ok) throw new Error(`HTTP ${res.status} ${res.statusText}`)
   const text = await res.text()
   return csvParse(text, autoType)
 }
 
-async function loadAll() {
-  loading.value = true
-  error.value = null
-  try {
-    annual.value = await listFiles()
-    // Fetch and parse every CSV in parallel; each element's `rows` is that file's contents.
-    datasets.value = await Promise.all(
-      annual.value.map(async (file) => {
-        const rows = await fetchCsv(file.url)
-        return { ...file, rows, latest: lastPositiveRow(rows) }
-      }),
-    )
-  } catch (e) {
-    error.value = e.message
-  } finally {
-    loading.value = false
+function chartAnnualEnergy() {
+  const latest = latestAnnualFile.value.rows
+  var data = [
+    {
+      x: latest.map((v) => v.date),
+      y: latest.map((v) => v.level_average),
+      type: 'scatter',
+      showlegend: false,
+      hoverinfo: 'x+text'
+    }
+  ]
+
+  var layout = {
+    height: 320,
+    showlegend: true,
+    legend: { xanchor: 'left', x: 0, y: -0.2, orientation: 'h' },
+    margin: { l: 70, r: 5, b: 30, t: 10 },
+    font: font,
+    xaxis: {
+      showgrid: false,
+      zeroline: false,
+      ticks: 'outside'
+    },
+    yaxis: {
+      title: '',
+      showgrid: true,
+      zeroline: false,
+      tickformat: '.0f',
+      ticks: 'outside',
+      
+    }
   }
+  return { data, layout, config: { displayModeBar: false } }
 }
 
-// The last row (chronologically latest) whose level_average is a positive number.
-function lastPositiveRow(rows) {
-  for (let i = rows.length - 1; i >= 0; i--) {
-    if (rows[i].level_average > 0) return rows[i]
-  }
-  return null
-}
-
-// autoType parses the `date` column into a Date; render it as a plain YYYY-MM-DD.
-function formatDate(value) {
-  return value instanceof Date ? value.toISOString().slice(0, 10) : value
-}
-
-// Sort key from the (water) year in a filename, e.g. "SiomaBridge_WY2024-2025.csv" -> 2025.
-function fileYear(name) {
-  const years = name.match(/\d{4}/g)
-  return years ? Math.max(...years.map(Number)) : -Infinity
-}
-
-// The latest record overall: last positive reading in the highest-year CSV file.
-const latestRecord = computed(() => {
+// The dataset for the latest water year (highest year in the filename).
+const latestAnnualFile = computed(() => {
   let best = null
-  for (const file of datasets.value) {
-    if (!file.latest) continue
-    if (!best || fileYear(file.name) > fileYear(best.name)) best = file
+  for (const file of annualFiles.value) {
+    if (!best || annualFileYear(file.name) > annualFileYear(best.name)) best = file
   }
   return best
 })
+
+// The latest record: last positive reading in the latest annual CSV only.
+const latestRecord = computed(() => {
+    if (!latestAnnualFile.value) return null
+    const rows = latestAnnualFile.value.rows
+    for (let i = rows.length - 1; i >= 0; i--) {
+      if (rows[i].level_average > 0) return rows[i]
+    }
+  }
+)
+
+// True when the latest record's date is more than 2 days old.
+const latestIsStale = computed(() => {
+  const date = latestRecord.value?.date
+  if (!(date instanceof Date)) return false
+  const twoDaysMs = 2 * 24 * 60 * 60 * 1000
+  return Date.now() - date.getTime() > twoDaysMs
+})
+
+function formatDate(value) {
+  if (!(value instanceof Date)) return value
+
+  const day = value.getDate()
+  const year = value.getFullYear()
+
+  // ordinal (1st, 2nd, 3rd, 4th... with 11-13 -> th)
+  const ord = (n => {
+    const rem100 = n % 100
+    if (rem100 >= 11 && rem100 <= 13) return 'th'
+    switch (n % 10) {
+      case 1:
+        return 'st'
+      case 2:
+        return 'nd'
+      case 3:
+        return 'rd'
+      default:
+        return 'th'
+    }
+  })(day)
+
+  const weekday = new Intl.DateTimeFormat(undefined, { weekday: 'long' }).format(value)
+  const month = new Intl.DateTimeFormat(undefined, { month: 'long' }).format(value)
+
+  return `${weekday} ${day}${ord} ${month} ${year}`
+}
+
+// Sort key from the (water) year in a filename, e.g. "SiomaBridge_WY2024-2025.csv" -> 2025.
+function annualFileYear(name) {
+  const years = name.match(/\d{4}/g)
+  return years ? Math.max(...years.map(Number)) : -Infinity
+}
 
 onMounted(loadAll)
 </script>
 
 <template>
   <main>
-    <h1>Available gauge data annual</h1>
+    <h1>Sioma Bridge Automatic Gauges</h1>
 
     <p v-if="loading">Loading…</p>
 
     <p v-else-if="error" class="error">
-      Failed to load annual: {{ error }}
+      Failed to load annualFiles: {{ error }}
       <button @click="loadAll">Retry</button>
     </p>
 
-    <p v-else-if="datasets.length === 0">No CSV annual found.</p>
+    <p v-else-if="annualFiles.length === 0">No CSV annualFiles found.</p>
 
     <template v-else>
-      <section v-if="latestRecord" class="latest">
-        <h2>Latest reading</h2>
-        <p class="reading">{{ latestRecord.latest.level_average }} m</p>
+      <section v-if="latestRecord" class="latest" :class="latestIsStale ? 'stale' : 'fresh'">
+        <h2>{{ formatDate(latestRecord.date) }}</h2>
+        <p class="reading">{{ latestRecord.level_average }} m</p>
         <p class="meta">
-          {{ formatDate(latestRecord.latest.date) }} · from {{ latestRecord.name }}
+          {{ latestRecord.gauges_min }} gauges recording
         </p>
       </section>
-
-    <table class="annual">
-      <thead>
-        <tr>
-          <th>File</th>
-          <th>Latest reading date</th>
-          <th>Level average</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="file in datasets" :key="file.name">
-          <td><a :href="file.url" target="_blank" rel="noopener">{{ file.name }}</a></td>
-          <template v-if="file.latest">
-            <td>{{ formatDate(file.latest.date) }}</td>
-            <td>{{ file.latest.level_average }}</td>
-          </template>
-          <template v-else>
-            <td colspan="2">No positive reading</td>
-          </template>
-        </tr>
-      </tbody>
-    </table>
+      <PlotlyChart :definition="chartAnnualEnergy()" />
     </template>
   </main>
 </template>
@@ -154,6 +205,16 @@ main {
   background: #f7f9fb;
 }
 
+.latest.fresh {
+  background: #e6f4ea;
+  border-color: #b7dfc2;
+}
+
+.latest.stale {
+  background: #fce8e6;
+  border-color: #f2b8b5;
+}
+
 .latest h2 {
   margin: 0 0 0.25rem;
   font-size: 0.9rem;
@@ -172,22 +233,6 @@ main {
 .latest .meta {
   margin: 0.25rem 0 0;
   color: #667;
-}
-
-table.annual {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-table.annual th,
-table.annual td {
-  text-align: left;
-  padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid #ddd;
-}
-
-table.annual th {
-  border-bottom: 2px solid #999;
 }
 
 .error {
