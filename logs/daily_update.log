@@ -387,3 +387,200 @@ Rebuilding annual water-year summaries...
 Done. annual files=2
 2026-07-20 08:19:34 build_annual_summaries.js OK
 2026-07-20 08:19:34 === daily_update done ===
+2026-07-21 01:00:01 === daily_update start (RAW_DIR=/home/wpc_ftp OUT_DIR=/mnt/data/gauge-data) ===
+RAW_DIR = /home/wpc_ftp
+OUT_DIR = /mnt/data/gauge-data
+Found 40 raw .mis file(s) in /home/wpc_ftp
+  [1/40] reading SiomaBridgeWPC__20260720110030.mis
+  [2/40] reading SiomaBridgeWPC__20260720120030.mis
+  [3/40] reading SiomaBridgeWPC__20260720130030.mis
+  [4/40] reading SiomaBridgeWPC__20260720140030.mis
+  [5/40] reading SiomaBridgeWPC__20260720150030.mis
+  [6/40] reading SiomaBridgeWPC__20260720150115.mis
+  [7/40] reading SiomaBridgeWPC__20260720150127.mis
+  [8/40] reading SiomaBridgeWPC__20260720150140.mis
+  [9/40] reading SiomaBridgeWPC__20260720150152.mis
+  [10/40] reading SiomaBridgeWPC__20260720160030.mis
+  [11/40] reading SiomaBridgeWPC__20260720170030.mis
+  [12/40] reading SiomaBridgeWPC__20260720170143.mis
+  [13/40] reading SiomaBridgeWPC__20260720180030.mis
+  [14/40] reading SiomaBridgeWPC__20260720190030.mis
+  [15/40] reading SiomaBridgeWPC__20260720200030.mis
+  [16/40] reading SiomaBridgeWPC__20260720200108.mis
+  [17/40] reading SiomaBridgeWPC__20260720200117.mis
+  [18/40] reading SiomaBridgeWPC__20260721000030.mis
+  [19/40] reading SiomaBridgeWPC__20260721000108.mis
+  [20/40] reading SiomaBridgeWPC__20260721000116.mis
+  [21/40] reading SiomaBridgeWPC__20260721000124.mis
+  [22/40] reading SiomaBridgeWPC__20260721010030.mis
+  [23/40] reading SiomaBridgeWPC__20260721020030.mis
+  [24/40] reading SiomaBridgeZRA__20260720110030.mis
+  [25/40] reading SiomaBridgeZRA__20260720120030.mis
+  [26/40] reading SiomaBridgeZRA__20260720130030.mis
+  [27/40] reading SiomaBridgeZRA__20260720140030.mis
+  [28/40] reading SiomaBridgeZRA__20260720150030.mis
+  [29/40] reading SiomaBridgeZRA__20260720160030.mis
+  [30/40] reading SiomaBridgeZRA__20260720170030.mis
+  [31/40] reading SiomaBridgeZRA__20260720180030.mis
+  [32/40] reading SiomaBridgeZRA__20260720190030.mis
+  [33/40] reading SiomaBridgeZRA__20260720200030.mis
+  [34/40] reading SiomaBridgeZRA__20260720200100.mis
+  [35/40] reading SiomaBridgeZRA__20260721000030.mis
+  [36/40] reading SiomaBridgeZRA__20260721000143.mis
+  [37/40] reading SiomaBridgeZRA__20260721000155.mis
+  [38/40] reading SiomaBridgeZRA__20260721000207.mis
+  [39/40] reading SiomaBridgeZRA__20260721010030.mis
+  [40/40] reading SiomaBridgeZRA__20260721020030.mis
+Merging 1 month(s) into monthly CSVs...
+  [month 202607] 64 interval(s) from this run -> SiomaBridge_202607.csv
+Archiving 40 processed raw file(s) into /mnt/data/gauge-data/processed...
+Done. files=40 (empty=8, unreadable=0), valid readings=128, rejected=0, months written=1, rows updated=64, archived=40
+2026-07-21 01:00:06 process_raw.js OK
+OUT_DIR = /mnt/data/gauge-data
+Rebuilding annual water-year summaries...
+  Aggregating 21 monthly CSV(s)
+  [WY2024-2025] 364 day(s) through 2025-09-30 -> SiomaBridge_WY2024-2025.csv
+  [WY2025-2026] 293 day(s) through 2026-07-20 -> SiomaBridge_WY2025-2026.csv
+Done. annual files=2
+2026-07-21 01:00:07 build_annual_summaries.js OK
+2026-07-21 01:00:07 === daily_update done ===
+2026-07-22 01:00:01 === daily_update start (RAW_DIR=/home/wpc_ftp OUT_DIR=/mnt/data/gauge-data) ===
+RAW_DIR = /home/wpc_ftp
+OUT_DIR = /mnt/data/gauge-data
+Found 60 raw .mis file(s) in /home/wpc_ftp
+  [1/60] reading SiomaBridgeWPC__20260721030030.mis
+  [2/60] reading SiomaBridgeWPC__20260721040030.mis
+  [3/60] reading SiomaBridgeWPC__20260721050030.mis
+  [4/60] reading SiomaBridgeWPC__20260721060030.mis
+  [5/60] reading SiomaBridgeWPC__20260721070030.mis
+  [6/60] reading SiomaBridgeWPC__20260721080030.mis
+  [7/60] reading SiomaBridgeWPC__20260721090030.mis
+  [8/60] reading SiomaBridgeWPC__20260721100030.mis
+  [9/60] reading SiomaBridgeWPC__20260721100128.mis
+  [10/60] reading SiomaBridgeWPC__20260721100140.mis
+  [11/60] reading SiomaBridgeWPC__20260721120030.mis
+  [12/60] reading SiomaBridgeWPC__20260721120406.mis
+  [13/60] reading SiomaBridgeWPC__20260721130030.mis
+  [14/60] reading SiomaBridgeWPC__20260721140030.mis
+  [15/60] reading SiomaBridgeWPC__20260721150030.mis
+  [16/60] reading SiomaBridgeWPC__20260721160030.mis
+  [17/60] reading SiomaBridgeWPC__20260721170030.mis
+  [18/60] reading SiomaBridgeWPC__20260721180030.mis
+  [19/60] reading SiomaBridgeWPC__20260721180538.mis
+  [20/60] reading SiomaBridgeWPC__20260721180550.mis
+  [21/60] reading SiomaBridgeWPC__20260721180602.mis
+  [22/60] reading SiomaBridgeWPC__20260721180614.mis
+  [23/60] reading SiomaBridgeWPC__20260721180626.mis
+  [24/60] reading SiomaBridgeWPC__20260721190030.mis
+  [25/60] reading SiomaBridgeWPC__20260721200030.mis
+  [26/60] reading SiomaBridgeWPC__20260721210030.mis
+  [27/60] reading SiomaBridgeWPC__20260721220030.mis
+  [28/60] reading SiomaBridgeWPC__20260721230030.mis
+  [29/60] reading SiomaBridgeWPC__20260721230100.mis
+  [30/60] reading SiomaBridgeWPC__20260722000030.mis
+  [31/60] reading SiomaBridgeWPC__20260722010030.mis
+  [32/60] reading SiomaBridgeWPC__20260722020030.mis
+  [33/60] reading SiomaBridgeZRA__20260721030030.mis
+  [34/60] reading SiomaBridgeZRA__20260721040030.mis
+  [35/60] reading SiomaBridgeZRA__20260721050030.mis
+  [36/60] reading SiomaBridgeZRA__20260721060030.mis
+  [37/60] reading SiomaBridgeZRA__20260721070030.mis
+  [38/60] reading SiomaBridgeZRA__20260721080030.mis
+  [39/60] reading SiomaBridgeZRA__20260721090030.mis
+  [40/60] reading SiomaBridgeZRA__20260721100030.mis
+  [41/60] reading SiomaBridgeZRA__20260721100100.mis
+  [42/60] reading SiomaBridgeZRA__20260721110030.mis
+  [43/60] reading SiomaBridgeZRA__20260721120030.mis
+  [44/60] reading SiomaBridgeZRA__20260721130030.mis
+  [45/60] reading SiomaBridgeZRA__20260721140030.mis
+  [46/60] reading SiomaBridgeZRA__20260721150030.mis
+  [47/60] reading SiomaBridgeZRA__20260721160030.mis
+  [48/60] reading SiomaBridgeZRA__20260721170030.mis
+  [49/60] reading SiomaBridgeZRA__20260721180030.mis
+  [50/60] reading SiomaBridgeZRA__20260721190030.mis
+  [51/60] reading SiomaBridgeZRA__20260721200030.mis
+  [52/60] reading SiomaBridgeZRA__20260721210030.mis
+  [53/60] reading SiomaBridgeZRA__20260721220030.mis
+  [54/60] reading SiomaBridgeZRA__20260721230030.mis
+  [55/60] reading SiomaBridgeZRA__20260721230531.mis
+  [56/60] reading SiomaBridgeZRA__20260721230539.mis
+  [57/60] reading SiomaBridgeZRA__20260721230548.mis
+  [58/60] reading SiomaBridgeZRA__20260722000030.mis
+  [59/60] reading SiomaBridgeZRA__20260722010030.mis
+  [60/60] reading SiomaBridgeZRA__20260722020030.mis
+Merging 1 month(s) into monthly CSVs...
+  [month 202607] 96 interval(s) from this run -> SiomaBridge_202607.csv
+Archiving 60 processed raw file(s) into /mnt/data/gauge-data/processed...
+Done. files=60 (empty=12, unreadable=0), valid readings=192, rejected=0, months written=1, rows updated=96, archived=60
+2026-07-22 01:00:06 process_raw.js OK
+OUT_DIR = /mnt/data/gauge-data
+Rebuilding annual water-year summaries...
+  Aggregating 21 monthly CSV(s)
+  [WY2024-2025] 364 day(s) through 2025-09-30 -> SiomaBridge_WY2024-2025.csv
+  [WY2025-2026] 294 day(s) through 2026-07-21 -> SiomaBridge_WY2025-2026.csv
+Done. annual files=2
+2026-07-22 01:00:07 build_annual_summaries.js OK
+2026-07-22 01:00:07 === daily_update done ===
+2026-07-22 13:06:32 === daily_update start (RAW_DIR=/home/wpc_ftp OUT_DIR=/mnt/data/gauge-data) ===
+RAW_DIR = /home/wpc_ftp
+OUT_DIR = /mnt/data/gauge-data
+Found 29 raw .mis file(s) in /home/wpc_ftp
+  [1/29] reading SiomaBridgeWPC__20260722030030.mis
+  [2/29] reading SiomaBridgeWPC__20260722040030.mis
+  [3/29] reading SiomaBridgeWPC__20260722050030.mis
+  [4/29] reading SiomaBridgeWPC__20260722060030.mis
+  [5/29] reading SiomaBridgeWPC__20260722070030.mis
+  [6/29] reading SiomaBridgeWPC__20260722080030.mis
+  [7/29] reading SiomaBridgeWPC__20260722090030.mis
+  [8/29] reading SiomaBridgeWPC__20260722100030.mis
+  [9/29] reading SiomaBridgeWPC__20260722110030.mis
+  [10/29] reading SiomaBridgeWPC__20260722110114.mis
+  [11/29] reading SiomaBridgeWPC__20260722120030.mis
+  [12/29] reading SiomaBridgeWPC__20260722130030.mis
+  [13/29] reading SiomaBridgeWPC__20260722140030.mis
+  [14/29] reading SiomaBridgeWPC__20260722150030.mis
+  [15/29] reading SiomaBridgeZRA__20260722030030.mis
+  [16/29] reading SiomaBridgeZRA__20260722040030.mis
+  [17/29] reading SiomaBridgeZRA__20260722050030.mis
+  [18/29] reading SiomaBridgeZRA__20260722060030.mis
+  [19/29] reading SiomaBridgeZRA__20260722070030.mis
+  [20/29] reading SiomaBridgeZRA__20260722080030.mis
+  [21/29] reading SiomaBridgeZRA__20260722090030.mis
+  [22/29] reading SiomaBridgeZRA__20260722100030.mis
+  [23/29] reading SiomaBridgeZRA__20260722110030.mis
+  [24/29] reading SiomaBridgeZRA__20260722120030.mis
+  [25/29] reading SiomaBridgeZRA__20260722130030.mis
+  [26/29] reading SiomaBridgeZRA__20260722140030.mis
+  [27/29] reading SiomaBridgeZRA__20260722140059.mis
+  [28/29] reading SiomaBridgeZRA__20260722140108.mis
+  [29/29] reading SiomaBridgeZRA__20260722150030.mis
+Merging 1 month(s) into monthly CSVs...
+  [month 202607] 48 interval(s) from this run -> SiomaBridge_202607.csv
+Archiving 29 processed raw file(s) into /mnt/data/gauge-data/processed...
+Done. files=29 (empty=5, unreadable=0), valid readings=96, rejected=0, months written=1, rows updated=48, archived=29
+2026-07-22 13:06:34 process_raw.js OK
+OUT_DIR = /mnt/data/gauge-data
+Rebuilding annual water-year summaries...
+  Aggregating 21 monthly CSV(s)
+  [WY2024-2025] 364 day(s) through 2025-09-30 -> SiomaBridge_WY2024-2025.csv
+  [WY2025-2026] 294 day(s) through 2026-07-21 -> SiomaBridge_WY2025-2026.csv
+Done. annual files=2
+2026-07-22 13:06:35 build_annual_summaries.js OK
+2026-07-22 13:06:35 === daily_update done ===
+2026-07-22 13:07:49 === daily_update start (RAW_DIR=/home/wpc_ftp OUT_DIR=/mnt/data/gauge-data) ===
+RAW_DIR = /home/wpc_ftp
+OUT_DIR = /mnt/data/gauge-data
+Found 1 raw .mis file(s) in /home/wpc_ftp
+  [1/1] reading SiomaBridgeWPC__20260722150030.mis
+Merging 0 month(s) into monthly CSVs...
+Archiving 1 processed raw file(s) into /mnt/data/gauge-data/processed...
+Done. files=1 (empty=1, unreadable=0), valid readings=0, rejected=0, months written=0, rows updated=0, archived=1
+2026-07-22 13:07:49 process_raw.js OK
+OUT_DIR = /mnt/data/gauge-data
+Rebuilding annual water-year summaries...
+  Aggregating 21 monthly CSV(s)
+  [WY2024-2025] 364 day(s) through 2025-09-30 -> SiomaBridge_WY2024-2025.csv
+  [WY2025-2026] 294 day(s) through 2026-07-21 -> SiomaBridge_WY2025-2026.csv
+Done. annual files=2
+2026-07-22 13:07:50 build_annual_summaries.js OK
+2026-07-22 13:07:50 === daily_update done ===
