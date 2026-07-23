@@ -64,17 +64,36 @@ async function fetchCsv(url) {
   return csvParse(text, autoType)
 }
 
+// Day number within the water year: 1st October = 1, running to 30th September.
+function waterDay(date) {
+  const y = date.getUTCFullYear()
+  const startYear = date.getUTCMonth() >= 9 ? y : y - 1 // Oct–Dec belong to that year's water year
+  const start = Date.UTC(startYear, 9, 1) // 1st October
+  return Math.round((date.getTime() - start) / 86400000) + 1
+}
+
 function chartAnnualEnergy() {
   const latest = latestAnnualFile.value.rows
-  var data = [
-    {
-      x: latest.map((v) => v.date),
-      y: latest.map((v) => v.level_average),
-      type: 'scatter',
-      showlegend: false,
-      hoverinfo: 'x+text'
+
+  // Water-year start (calendar year of the 1st October), taken from the data.
+  const sample = latest.find((v) => v.date instanceof Date)?.date
+  const startYear = sample ? (sample.getUTCMonth() >= 9 ? sample.getUTCFullYear() : sample.getUTCFullYear() - 1) : 2000
+
+  // Month-start ticks labelled Oct → Sep, positioned by their water-day value.
+  const months = [9, 10, 11, 0, 1, 2, 3, 4, 5, 6, 7, 8]
+  const monthLabels = ['Oct', 'Nov', 'Dec', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep']
+  const tickvals = months.map((m, i) => waterDay(new Date(Date.UTC(startYear + (i < 3 ? 0 : 1), m, 1))))
+
+  var data = annualFiles.value.map(a=> {
+    console.log(a)
+    return   {
+      x: a.rows.map((v) => waterDay(v.date)),
+      y: a.rows.map((v) => v.level_average),
+      text: a.rows.map((v) => formatDate(v.date)),
+      name: a.name,
+      hoverinfo: 'text+y'
     }
-  ]
+  })
 
   var layout = {
     height: 320,
@@ -85,13 +104,17 @@ function chartAnnualEnergy() {
     xaxis: {
       showgrid: false,
       zeroline: false,
-      ticks: 'outside'
+      ticks: 'outside',
+      tickmode: 'array',
+      tickvals: tickvals,
+      ticktext: monthLabels,
+      range: [1, 366]
     },
     yaxis: {
       title: '',
       showgrid: true,
       zeroline: false,
-      tickformat: '.0f',
+      tickformat: '.1f',
       ticks: 'outside',
       
     }
