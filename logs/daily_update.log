@@ -1,383 +1,3 @@
-2026-07-20 08:19:26 === daily_update start (RAW_DIR=/home/wpc_ftp OUT_DIR=/mnt/data/gauge-data) ===
-RAW_DIR = /home/wpc_ftp
-OUT_DIR = /mnt/data/gauge-data
-Found 372 raw .mis file(s) in /home/wpc_ftp
-  [1/372] reading SiomaBridgeWPC__20260714110030.mis
-  [2/372] reading SiomaBridgeWPC__20260714120030.mis
-  [3/372] reading SiomaBridgeWPC__20260714130030.mis
-  [4/372] reading SiomaBridgeWPC__20260714130122.mis
-  [5/372] reading SiomaBridgeWPC__20260714130133.mis
-  [6/372] reading SiomaBridgeWPC__20260714140030.mis
-  [7/372] reading SiomaBridgeWPC__20260714150030.mis
-  [8/372] reading SiomaBridgeWPC__20260714150114.mis
-  [9/372] reading SiomaBridgeWPC__20260714160030.mis
-  [10/372] reading SiomaBridgeWPC__20260714170030.mis
-  [11/372] reading SiomaBridgeWPC__20260714180030.mis
-  [12/372] reading SiomaBridgeWPC__20260714181217.mis
-  [13/372] reading SiomaBridgeWPC__20260714181228.mis
-  [14/372] reading SiomaBridgeWPC__20260714190030.mis
-  [15/372] reading SiomaBridgeWPC__20260714200030.mis
-  [16/372] reading SiomaBridgeWPC__20260714200114.mis
-  [17/372] reading SiomaBridgeWPC__20260714210030.mis
-  [18/372] reading SiomaBridgeWPC__20260714210500.mis
-  [19/372] reading SiomaBridgeWPC__20260714210541.mis
-  [20/372] reading SiomaBridgeWPC__20260714220030.mis
-  [21/372] reading SiomaBridgeWPC__20260714230030.mis
-  [22/372] reading SiomaBridgeWPC__20260715000030.mis
-  [23/372] reading SiomaBridgeWPC__20260715010030.mis
-  [24/372] reading SiomaBridgeWPC__20260715020030.mis
-  [25/372] reading SiomaBridgeWPC__20260715030030.mis
-  [26/372] reading SiomaBridgeWPC__20260715040030.mis
-  [27/372] reading SiomaBridgeWPC__20260715050030.mis
-  [28/372] reading SiomaBridgeWPC__20260715060030.mis
-  [29/372] reading SiomaBridgeWPC__20260715070030.mis
-  [30/372] reading SiomaBridgeWPC__20260715080030.mis
-  [31/372] reading SiomaBridgeWPC__20260715090030.mis
-  [32/372] reading SiomaBridgeWPC__20260715100030.mis
-  [33/372] reading SiomaBridgeWPC__20260715110030.mis
-  [34/372] reading SiomaBridgeWPC__20260715110108.mis
-  [35/372] reading SiomaBridgeWPC__20260715120030.mis
-  [36/372] reading SiomaBridgeWPC__20260715130030.mis
-  [37/372] reading SiomaBridgeWPC__20260715131201.mis
-  [38/372] reading SiomaBridgeWPC__20260715140030.mis
-  [39/372] reading SiomaBridgeWPC__20260715150030.mis
-  [40/372] reading SiomaBridgeWPC__20260715160030.mis
-  [41/372] reading SiomaBridgeWPC__20260715160115.mis
-  [42/372] reading SiomaBridgeWPC__20260715170030.mis
-  [43/372] reading SiomaBridgeWPC__20260715180030.mis
-  [44/372] reading SiomaBridgeWPC__20260715190030.mis
-  [45/372] reading SiomaBridgeWPC__20260715200030.mis
-  [46/372] reading SiomaBridgeWPC__20260715200100.mis
-  [47/372] reading SiomaBridgeWPC__20260715210030.mis
-  [48/372] reading SiomaBridgeWPC__20260715210100.mis
-  [49/372] reading SiomaBridgeWPC__20260715210109.mis
-  [50/372] reading SiomaBridgeWPC__20260715210117.mis
-  [51/372] reading SiomaBridgeWPC__20260715210126.mis
-  [52/372] reading SiomaBridgeWPC__20260715220030.mis
-  [53/372] reading SiomaBridgeWPC__20260715230030.mis
-  [54/372] reading SiomaBridgeWPC__20260716000030.mis
-  [55/372] reading SiomaBridgeWPC__20260716010030.mis
-  [56/372] reading SiomaBridgeWPC__20260716020030.mis
-  [57/372] reading SiomaBridgeWPC__20260716030030.mis
-  [58/372] reading SiomaBridgeWPC__20260716040030.mis
-  [59/372] reading SiomaBridgeWPC__20260716050030.mis
-  [60/372] reading SiomaBridgeWPC__20260716060030.mis
-  [61/372] reading SiomaBridgeWPC__20260716070030.mis
-  [62/372] reading SiomaBridgeWPC__20260716080030.mis
-  [63/372] reading SiomaBridgeWPC__20260716090030.mis
-  [64/372] reading SiomaBridgeWPC__20260716100030.mis
-  [65/372] reading SiomaBridgeWPC__20260716110030.mis
-  [66/372] reading SiomaBridgeWPC__20260716120030.mis
-  [67/372] reading SiomaBridgeWPC__20260716130030.mis
-  [68/372] reading SiomaBridgeWPC__20260716140030.mis
-  [69/372] reading SiomaBridgeWPC__20260716150030.mis
-  [70/372] reading SiomaBridgeWPC__20260716150828.mis
-  [71/372] reading SiomaBridgeWPC__20260716160030.mis
-  [72/372] reading SiomaBridgeWPC__20260716170030.mis
-  [73/372] reading SiomaBridgeWPC__20260716180030.mis
-  [74/372] reading SiomaBridgeWPC__20260716180114.mis
-  [75/372] reading SiomaBridgeWPC__20260716180126.mis
-  [76/372] reading SiomaBridgeWPC__20260716190030.mis
-  [77/372] reading SiomaBridgeWPC__20260716200030.mis
-  [78/372] reading SiomaBridgeWPC__20260716210030.mis
-  [79/372] reading SiomaBridgeWPC__20260716210129.mis
-  [80/372] reading SiomaBridgeWPC__20260716210140.mis
-  [81/372] reading SiomaBridgeWPC__20260716220030.mis
-  [82/372] reading SiomaBridgeWPC__20260716230030.mis
-  [83/372] reading SiomaBridgeWPC__20260716230107.mis
-  [84/372] reading SiomaBridgeWPC__20260717000030.mis
-  [85/372] reading SiomaBridgeWPC__20260717010030.mis
-  [86/372] reading SiomaBridgeWPC__20260717020030.mis
-  [87/372] reading SiomaBridgeWPC__20260717030030.mis
-  [88/372] reading SiomaBridgeWPC__20260717040030.mis
-  [89/372] reading SiomaBridgeWPC__20260717050030.mis
-  [90/372] reading SiomaBridgeWPC__20260717060030.mis
-  [91/372] reading SiomaBridgeWPC__20260717070030.mis
-  [92/372] reading SiomaBridgeWPC__20260717080030.mis
-  [93/372] reading SiomaBridgeWPC__20260717090030.mis
-  [94/372] reading SiomaBridgeWPC__20260717100030.mis
-  [95/372] reading SiomaBridgeWPC__20260717100114.mis
-  [96/372] reading SiomaBridgeWPC__20260717100126.mis
-  [97/372] reading SiomaBridgeWPC__20260717110030.mis
-  [98/372] reading SiomaBridgeWPC__20260717120030.mis
-  [99/372] reading SiomaBridgeWPC__20260717130030.mis
-  [100/372] reading SiomaBridgeWPC__20260717140030.mis
-  [101/372] reading SiomaBridgeWPC__20260717150030.mis
-  [102/372] reading SiomaBridgeWPC__20260717160030.mis
-  [103/372] reading SiomaBridgeWPC__20260717170030.mis
-  [104/372] reading SiomaBridgeWPC__20260717180030.mis
-  [105/372] reading SiomaBridgeWPC__20260717190030.mis
-  [106/372] reading SiomaBridgeWPC__20260717200030.mis
-  [107/372] reading SiomaBridgeWPC__20260717200108.mis
-  [108/372] reading SiomaBridgeWPC__20260717200116.mis
-  [109/372] reading SiomaBridgeWPC__20260717210030.mis
-  [110/372] reading SiomaBridgeWPC__20260717220030.mis
-  [111/372] reading SiomaBridgeWPC__20260717230030.mis
-  [112/372] reading SiomaBridgeWPC__20260717230108.mis
-  [113/372] reading SiomaBridgeWPC__20260718000030.mis
-  [114/372] reading SiomaBridgeWPC__20260718010030.mis
-  [115/372] reading SiomaBridgeWPC__20260718020030.mis
-  [116/372] reading SiomaBridgeWPC__20260718030030.mis
-  [117/372] reading SiomaBridgeWPC__20260718040030.mis
-  [118/372] reading SiomaBridgeWPC__20260718050030.mis
-  [119/372] reading SiomaBridgeWPC__20260718060030.mis
-  [120/372] reading SiomaBridgeWPC__20260718070030.mis
-  [121/372] reading SiomaBridgeWPC__20260718080030.mis
-  [122/372] reading SiomaBridgeWPC__20260718090030.mis
-  [123/372] reading SiomaBridgeWPC__20260718100030.mis
-  [124/372] reading SiomaBridgeWPC__20260718110030.mis
-  [125/372] reading SiomaBridgeWPC__20260718120030.mis
-  [126/372] reading SiomaBridgeWPC__20260718130030.mis
-  [127/372] reading SiomaBridgeWPC__20260718140030.mis
-  [128/372] reading SiomaBridgeWPC__20260718150030.mis
-  [129/372] reading SiomaBridgeWPC__20260718160030.mis
-  [130/372] reading SiomaBridgeWPC__20260718160128.mis
-  [131/372] reading SiomaBridgeWPC__20260718160140.mis
-  [132/372] reading SiomaBridgeWPC__20260718160152.mis
-  [133/372] reading SiomaBridgeWPC__20260718160211.mis
-  [134/372] reading SiomaBridgeWPC__20260718160227.mis
-  [135/372] reading SiomaBridgeWPC__20260718160242.mis
-  [136/372] reading SiomaBridgeWPC__20260718160302.mis
-  [137/372] reading SiomaBridgeWPC__20260718160331.mis
-  [138/372] reading SiomaBridgeWPC__20260718170030.mis
-  [139/372] reading SiomaBridgeWPC__20260718180030.mis
-  [140/372] reading SiomaBridgeWPC__20260718190030.mis
-  [141/372] reading SiomaBridgeWPC__20260718200030.mis
-  [142/372] reading SiomaBridgeWPC__20260718210030.mis
-  [143/372] reading SiomaBridgeWPC__20260718220030.mis
-  [144/372] reading SiomaBridgeWPC__20260718220158.mis
-  [145/372] reading SiomaBridgeWPC__20260718220211.mis
-  [146/372] reading SiomaBridgeWPC__20260718220223.mis
-  [147/372] reading SiomaBridgeWPC__20260718230030.mis
-  [148/372] reading SiomaBridgeWPC__20260719000030.mis
-  [149/372] reading SiomaBridgeWPC__20260719010030.mis
-  [150/372] reading SiomaBridgeWPC__20260719020030.mis
-  [151/372] reading SiomaBridgeWPC__20260719030030.mis
-  [152/372] reading SiomaBridgeWPC__20260719040030.mis
-  [153/372] reading SiomaBridgeWPC__20260719050030.mis
-  [154/372] reading SiomaBridgeWPC__20260719060030.mis
-  [155/372] reading SiomaBridgeWPC__20260719070030.mis
-  [156/372] reading SiomaBridgeWPC__20260719080030.mis
-  [157/372] reading SiomaBridgeWPC__20260719090030.mis
-  [158/372] reading SiomaBridgeWPC__20260719090209.mis
-  [159/372] reading SiomaBridgeWPC__20260719100030.mis
-  [160/372] reading SiomaBridgeWPC__20260719110030.mis
-  [161/372] reading SiomaBridgeWPC__20260719120030.mis
-  [162/372] reading SiomaBridgeWPC__20260719120127.mis
-  [163/372] reading SiomaBridgeWPC__20260719120157.mis
-  [164/372] reading SiomaBridgeWPC__20260719130030.mis
-  [165/372] reading SiomaBridgeWPC__20260719140030.mis
-  [166/372] reading SiomaBridgeWPC__20260719150030.mis
-  [167/372] reading SiomaBridgeWPC__20260719160030.mis
-  [168/372] reading SiomaBridgeWPC__20260719170030.mis
-  [169/372] reading SiomaBridgeWPC__20260719180030.mis
-  [170/372] reading SiomaBridgeWPC__20260719190030.mis
-  [171/372] reading SiomaBridgeWPC__20260719200030.mis
-  [172/372] reading SiomaBridgeWPC__20260719200059.mis
-  [173/372] reading SiomaBridgeWPC__20260719200108.mis
-  [174/372] reading SiomaBridgeWPC__20260719200116.mis
-  [175/372] reading SiomaBridgeWPC__20260719200124.mis
-  [176/372] reading SiomaBridgeWPC__20260719210030.mis
-  [177/372] reading SiomaBridgeWPC__20260719210100.mis
-  [178/372] reading SiomaBridgeWPC__20260719210108.mis
-  [179/372] reading SiomaBridgeWPC__20260719210119.mis
-  [180/372] reading SiomaBridgeWPC__20260719220030.mis
-  [181/372] reading SiomaBridgeWPC__20260719230030.mis
-  [182/372] reading SiomaBridgeWPC__20260720000030.mis
-  [183/372] reading SiomaBridgeWPC__20260720010030.mis
-  [184/372] reading SiomaBridgeWPC__20260720020030.mis
-  [185/372] reading SiomaBridgeWPC__20260720030030.mis
-  [186/372] reading SiomaBridgeWPC__20260720040030.mis
-  [187/372] reading SiomaBridgeWPC__20260720050030.mis
-  [188/372] reading SiomaBridgeWPC__20260720060030.mis
-  [189/372] reading SiomaBridgeWPC__20260720070030.mis
-  [190/372] reading SiomaBridgeWPC__20260720080030.mis
-  [191/372] reading SiomaBridgeWPC__20260720090030.mis
-  [192/372] reading SiomaBridgeWPC__20260720100030.mis
-  [193/372] reading SiomaBridgeWPC__20260720100355.mis
-  [194/372] reading SiomaBridgeZRA__20260714120030.mis
-  [195/372] reading SiomaBridgeZRA__20260714130030.mis
-  [196/372] reading SiomaBridgeZRA__20260714140030.mis
-  [197/372] reading SiomaBridgeZRA__20260714150030.mis
-  [198/372] reading SiomaBridgeZRA__20260714160030.mis
-  [199/372] reading SiomaBridgeZRA__20260714170030.mis
-  [200/372] reading SiomaBridgeZRA__20260714180030.mis
-  [201/372] reading SiomaBridgeZRA__20260714190030.mis
-  [202/372] reading SiomaBridgeZRA__20260714200030.mis
-  [203/372] reading SiomaBridgeZRA__20260714200349.mis
-  [204/372] reading SiomaBridgeZRA__20260714210030.mis
-  [205/372] reading SiomaBridgeZRA__20260714220030.mis
-  [206/372] reading SiomaBridgeZRA__20260714230030.mis
-  [207/372] reading SiomaBridgeZRA__20260715000030.mis
-  [208/372] reading SiomaBridgeZRA__20260715000356.mis
-  [209/372] reading SiomaBridgeZRA__20260715000404.mis
-  [210/372] reading SiomaBridgeZRA__20260715010030.mis
-  [211/372] reading SiomaBridgeZRA__20260715020030.mis
-  [212/372] reading SiomaBridgeZRA__20260715030030.mis
-  [213/372] reading SiomaBridgeZRA__20260715040030.mis
-  [214/372] reading SiomaBridgeZRA__20260715050030.mis
-  [215/372] reading SiomaBridgeZRA__20260715060030.mis
-  [216/372] reading SiomaBridgeZRA__20260715070030.mis
-  [217/372] reading SiomaBridgeZRA__20260715080030.mis
-  [218/372] reading SiomaBridgeZRA__20260715090030.mis
-  [219/372] reading SiomaBridgeZRA__20260715100030.mis
-  [220/372] reading SiomaBridgeZRA__20260715100258.mis
-  [221/372] reading SiomaBridgeZRA__20260715110030.mis
-  [222/372] reading SiomaBridgeZRA__20260715120030.mis
-  [223/372] reading SiomaBridgeZRA__20260715130030.mis
-  [224/372] reading SiomaBridgeZRA__20260715130059.mis
-  [225/372] reading SiomaBridgeZRA__20260715140030.mis
-  [226/372] reading SiomaBridgeZRA__20260715150030.mis
-  [227/372] reading SiomaBridgeZRA__20260715150059.mis
-  [228/372] reading SiomaBridgeZRA__20260715160030.mis
-  [229/372] reading SiomaBridgeZRA__20260715170030.mis
-  [230/372] reading SiomaBridgeZRA__20260715170100.mis
-  [231/372] reading SiomaBridgeZRA__20260715180030.mis
-  [232/372] reading SiomaBridgeZRA__20260715190030.mis
-  [233/372] reading SiomaBridgeZRA__20260715190059.mis
-  [234/372] reading SiomaBridgeZRA__20260715200030.mis
-  [235/372] reading SiomaBridgeZRA__20260715210030.mis
-  [236/372] reading SiomaBridgeZRA__20260715220030.mis
-  [237/372] reading SiomaBridgeZRA__20260715230030.mis
-  [238/372] reading SiomaBridgeZRA__20260716000030.mis
-  [239/372] reading SiomaBridgeZRA__20260716010030.mis
-  [240/372] reading SiomaBridgeZRA__20260716020030.mis
-  [241/372] reading SiomaBridgeZRA__20260716030030.mis
-  [242/372] reading SiomaBridgeZRA__20260716040030.mis
-  [243/372] reading SiomaBridgeZRA__20260716050030.mis
-  [244/372] reading SiomaBridgeZRA__20260716060030.mis
-  [245/372] reading SiomaBridgeZRA__20260716070030.mis
-  [246/372] reading SiomaBridgeZRA__20260716080030.mis
-  [247/372] reading SiomaBridgeZRA__20260716090030.mis
-  [248/372] reading SiomaBridgeZRA__20260716100030.mis
-  [249/372] reading SiomaBridgeZRA__20260716110030.mis
-  [250/372] reading SiomaBridgeZRA__20260716120030.mis
-  [251/372] reading SiomaBridgeZRA__20260716130030.mis
-  [252/372] reading SiomaBridgeZRA__20260716140030.mis
-  [253/372] reading SiomaBridgeZRA__20260716150030.mis
-  [254/372] reading SiomaBridgeZRA__20260716160030.mis
-  [255/372] reading SiomaBridgeZRA__20260716170030.mis
-  [256/372] reading SiomaBridgeZRA__20260716180030.mis
-  [257/372] reading SiomaBridgeZRA__20260716190030.mis
-  [258/372] reading SiomaBridgeZRA__20260716200030.mis
-  [259/372] reading SiomaBridgeZRA__20260716210030.mis
-  [260/372] reading SiomaBridgeZRA__20260716220030.mis
-  [261/372] reading SiomaBridgeZRA__20260716230030.mis
-  [262/372] reading SiomaBridgeZRA__20260716230107.mis
-  [263/372] reading SiomaBridgeZRA__20260717000030.mis
-  [264/372] reading SiomaBridgeZRA__20260717010030.mis
-  [265/372] reading SiomaBridgeZRA__20260717020030.mis
-  [266/372] reading SiomaBridgeZRA__20260717030030.mis
-  [267/372] reading SiomaBridgeZRA__20260717040030.mis
-  [268/372] reading SiomaBridgeZRA__20260717050030.mis
-  [269/372] reading SiomaBridgeZRA__20260717060030.mis
-  [270/372] reading SiomaBridgeZRA__20260717070030.mis
-  [271/372] reading SiomaBridgeZRA__20260717080030.mis
-  [272/372] reading SiomaBridgeZRA__20260717090030.mis
-  [273/372] reading SiomaBridgeZRA__20260717100030.mis
-  [274/372] reading SiomaBridgeZRA__20260717101111.mis
-  [275/372] reading SiomaBridgeZRA__20260717110030.mis
-  [276/372] reading SiomaBridgeZRA__20260717120030.mis
-  [277/372] reading SiomaBridgeZRA__20260717130030.mis
-  [278/372] reading SiomaBridgeZRA__20260717131130.mis
-  [279/372] reading SiomaBridgeZRA__20260717140030.mis
-  [280/372] reading SiomaBridgeZRA__20260717140100.mis
-  [281/372] reading SiomaBridgeZRA__20260717140108.mis
-  [282/372] reading SiomaBridgeZRA__20260717150030.mis
-  [283/372] reading SiomaBridgeZRA__20260717160030.mis
-  [284/372] reading SiomaBridgeZRA__20260717161012.mis
-  [285/372] reading SiomaBridgeZRA__20260717170030.mis
-  [286/372] reading SiomaBridgeZRA__20260717180030.mis
-  [287/372] reading SiomaBridgeZRA__20260717190030.mis
-  [288/372] reading SiomaBridgeZRA__20260717200030.mis
-  [289/372] reading SiomaBridgeZRA__20260717210030.mis
-  [290/372] reading SiomaBridgeZRA__20260717220030.mis
-  [291/372] reading SiomaBridgeZRA__20260717220108.mis
-  [292/372] reading SiomaBridgeZRA__20260717230030.mis
-  [293/372] reading SiomaBridgeZRA__20260718000030.mis
-  [294/372] reading SiomaBridgeZRA__20260718010030.mis
-  [295/372] reading SiomaBridgeZRA__20260718020030.mis
-  [296/372] reading SiomaBridgeZRA__20260718030030.mis
-  [297/372] reading SiomaBridgeZRA__20260718040030.mis
-  [298/372] reading SiomaBridgeZRA__20260718050030.mis
-  [299/372] reading SiomaBridgeZRA__20260718060030.mis
-  [300/372] reading SiomaBridgeZRA__20260718070030.mis
-  [301/372] reading SiomaBridgeZRA__20260718080030.mis
-  [302/372] reading SiomaBridgeZRA__20260718090030.mis
-  [303/372] reading SiomaBridgeZRA__20260718090943.mis
-  [304/372] reading SiomaBridgeZRA__20260718100030.mis
-  [305/372] reading SiomaBridgeZRA__20260718110030.mis
-  [306/372] reading SiomaBridgeZRA__20260718120030.mis
-  [307/372] reading SiomaBridgeZRA__20260718130030.mis
-  [308/372] reading SiomaBridgeZRA__20260718140030.mis
-  [309/372] reading SiomaBridgeZRA__20260718150030.mis
-  [310/372] reading SiomaBridgeZRA__20260718150234.mis
-  [311/372] reading SiomaBridgeZRA__20260718160030.mis
-  [312/372] reading SiomaBridgeZRA__20260718170030.mis
-  [313/372] reading SiomaBridgeZRA__20260718170100.mis
-  [314/372] reading SiomaBridgeZRA__20260718170403.mis
-  [315/372] reading SiomaBridgeZRA__20260718170411.mis
-  [316/372] reading SiomaBridgeZRA__20260718170420.mis
-  [317/372] reading SiomaBridgeZRA__20260718170714.mis
-  [318/372] reading SiomaBridgeZRA__20260718170723.mis
-  [319/372] reading SiomaBridgeZRA__20260718180030.mis
-  [320/372] reading SiomaBridgeZRA__20260718190030.mis
-  [321/372] reading SiomaBridgeZRA__20260718200030.mis
-  [322/372] reading SiomaBridgeZRA__20260718201003.mis
-  [323/372] reading SiomaBridgeZRA__20260718201015.mis
-  [324/372] reading SiomaBridgeZRA__20260718210030.mis
-  [325/372] reading SiomaBridgeZRA__20260718220030.mis
-  [326/372] reading SiomaBridgeZRA__20260718220100.mis
-  [327/372] reading SiomaBridgeZRA__20260718230030.mis
-  [328/372] reading SiomaBridgeZRA__20260719000030.mis
-  [329/372] reading SiomaBridgeZRA__20260719010030.mis
-  [330/372] reading SiomaBridgeZRA__20260719020030.mis
-  [331/372] reading SiomaBridgeZRA__20260719030030.mis
-  [332/372] reading SiomaBridgeZRA__20260719040030.mis
-  [333/372] reading SiomaBridgeZRA__20260719050030.mis
-  [334/372] reading SiomaBridgeZRA__20260719060030.mis
-  [335/372] reading SiomaBridgeZRA__20260719070030.mis
-  [336/372] reading SiomaBridgeZRA__20260719080030.mis
-  [337/372] reading SiomaBridgeZRA__20260719090030.mis
-  [338/372] reading SiomaBridgeZRA__20260719090359.mis
-  [339/372] reading SiomaBridgeZRA__20260719100030.mis
-  [340/372] reading SiomaBridgeZRA__20260719110030.mis
-  [341/372] reading SiomaBridgeZRA__20260719110415.mis
-  [342/372] reading SiomaBridgeZRA__20260719120030.mis
-  [343/372] reading SiomaBridgeZRA__20260719130030.mis
-  [344/372] reading SiomaBridgeZRA__20260719130353.mis
-  [345/372] reading SiomaBridgeZRA__20260719140030.mis
-  [346/372] reading SiomaBridgeZRA__20260719150030.mis
-  [347/372] reading SiomaBridgeZRA__20260719160030.mis
-  [348/372] reading SiomaBridgeZRA__20260719160254.mis
-  [349/372] reading SiomaBridgeZRA__20260719161011.mis
-  [350/372] reading SiomaBridgeZRA__20260719170030.mis
-  [351/372] reading SiomaBridgeZRA__20260719180030.mis
-  [352/372] reading SiomaBridgeZRA__20260719180100.mis
-  [353/372] reading SiomaBridgeZRA__20260719180108.mis
-  [354/372] reading SiomaBridgeZRA__20260719180117.mis
-  [355/372] reading SiomaBridgeZRA__20260719190030.mis
-  [356/372] reading SiomaBridgeZRA__20260719200030.mis
-  [357/372] reading SiomaBridgeZRA__20260719200204.mis
-  [358/372] reading SiomaBridgeZRA__20260719210030.mis
-  [359/372] reading SiomaBridgeZRA__20260719220030.mis
-  [360/372] reading SiomaBridgeZRA__20260719230030.mis
-  [361/372] reading SiomaBridgeZRA__20260719230245.mis
-  [362/372] reading SiomaBridgeZRA__20260720000030.mis
-  [363/372] reading SiomaBridgeZRA__20260720010030.mis
-  [364/372] reading SiomaBridgeZRA__20260720020030.mis
-  [365/372] reading SiomaBridgeZRA__20260720030030.mis
-  [366/372] reading SiomaBridgeZRA__20260720040030.mis
-  [367/372] reading SiomaBridgeZRA__20260720050030.mis
-  [368/372] reading SiomaBridgeZRA__20260720060030.mis
-  [369/372] reading SiomaBridgeZRA__20260720070030.mis
-  [370/372] reading SiomaBridgeZRA__20260720080030.mis
-  [371/372] reading SiomaBridgeZRA__20260720090030.mis
-  [372/372] reading SiomaBridgeZRA__20260720100030.mis
-Merging 1 month(s) into monthly CSVs...
-  [month 202607] 576 interval(s) from this run -> SiomaBridge_202607.csv
-Archiving 372 processed raw file(s) into /mnt/data/gauge-data/processed...
-Done. files=372 (empty=79, unreadable=0), valid readings=1172, rejected=0, months written=1, rows updated=576, archived=372
 2026-07-20 08:19:33 process_raw.js OK
 OUT_DIR = /mnt/data/gauge-data
 Rebuilding annual water-year summaries...
@@ -584,3 +204,185 @@ Rebuilding annual water-year summaries...
 Done. annual files=2
 2026-07-22 13:07:50 build_annual_summaries.js OK
 2026-07-22 13:07:50 === daily_update done ===
+2026-07-23 01:00:01 === daily_update start (RAW_DIR=/home/wpc_ftp OUT_DIR=/mnt/data/gauge-data) ===
+RAW_DIR = /home/wpc_ftp
+OUT_DIR = /mnt/data/gauge-data
+Found 30 raw .mis file(s) in /home/wpc_ftp
+  [1/30] reading SiomaBridgeWPC__20260722150030.mis
+  [2/30] reading SiomaBridgeWPC__20260722160030.mis
+  [3/30] reading SiomaBridgeWPC__20260722170030.mis
+  [4/30] reading SiomaBridgeWPC__20260722180030.mis
+  [5/30] reading SiomaBridgeWPC__20260722190030.mis
+  [6/30] reading SiomaBridgeWPC__20260722190108.mis
+  [7/30] reading SiomaBridgeWPC__20260722200030.mis
+  [8/30] reading SiomaBridgeWPC__20260722210030.mis
+  [9/30] reading SiomaBridgeWPC__20260722220030.mis
+  [10/30] reading SiomaBridgeWPC__20260722230030.mis
+  [11/30] reading SiomaBridgeWPC__20260722230530.mis
+  [12/30] reading SiomaBridgeWPC__20260723000030.mis
+  [13/30] reading SiomaBridgeWPC__20260723010030.mis
+  [14/30] reading SiomaBridgeWPC__20260723020030.mis
+  [15/30] reading SiomaBridgeZRA__20260722150030.mis
+  [16/30] reading SiomaBridgeZRA__20260722160030.mis
+  [17/30] reading SiomaBridgeZRA__20260722160059.mis
+  [18/30] reading SiomaBridgeZRA__20260722170030.mis
+  [19/30] reading SiomaBridgeZRA__20260722180030.mis
+  [20/30] reading SiomaBridgeZRA__20260722190030.mis
+  [21/30] reading SiomaBridgeZRA__20260722190059.mis
+  [22/30] reading SiomaBridgeZRA__20260722200030.mis
+  [23/30] reading SiomaBridgeZRA__20260722210030.mis
+  [24/30] reading SiomaBridgeZRA__20260722220030.mis
+  [25/30] reading SiomaBridgeZRA__20260722220059.mis
+  [26/30] reading SiomaBridgeZRA__20260722220108.mis
+  [27/30] reading SiomaBridgeZRA__20260722230030.mis
+  [28/30] reading SiomaBridgeZRA__20260723000030.mis
+  [29/30] reading SiomaBridgeZRA__20260723010030.mis
+  [30/30] reading SiomaBridgeZRA__20260723020030.mis
+Merging 1 month(s) into monthly CSVs...
+  [month 202607] 48 interval(s) from this run -> SiomaBridge_202607.csv
+Archiving 30 processed raw file(s) into /mnt/data/gauge-data/processed...
+node:fs:3086
+  binding.copyFile(
+          ^
+
+Error: EACCES: permission denied, copyfile '/home/wpc_ftp/SiomaBridgeWPC__20260722150030.mis' -> '/mnt/data/gauge-data/processed/202607/SiomaBridgeWPC__20260722150030.mis'
+    at Object.copyFileSync (node:fs:3086:11)
+    at moveFile (file:///home/ubuntu/ngonye-gauges/lib/process_raw.js:72:8)
+    at main (file:///home/ubuntu/ngonye-gauges/lib/process_raw.js:214:5)
+    at file:///home/ubuntu/ngonye-gauges/lib/process_raw.js:234:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'copyfile',
+  path: '/home/wpc_ftp/SiomaBridgeWPC__20260722150030.mis',
+  dest: '/mnt/data/gauge-data/processed/202607/SiomaBridgeWPC__20260722150030.mis'
+}
+
+Node.js v22.15.1
+2026-07-23 01:00:05 process_raw.js FAILED (exit 1) - aborting before build_annual_summaries.js
+2026-07-23 06:02:01 === daily_update start (RAW_DIR=/home/wpc_ftp OUT_DIR=/mnt/data/gauge-data) ===
+RAW_DIR = /home/wpc_ftp
+OUT_DIR = /mnt/data/gauge-data
+Found 38 raw .mis file(s) in /home/wpc_ftp
+  [1/38] reading SiomaBridgeWPC__20260722150030.mis
+  [2/38] reading SiomaBridgeWPC__20260722160030.mis
+  [3/38] reading SiomaBridgeWPC__20260722170030.mis
+  [4/38] reading SiomaBridgeWPC__20260722180030.mis
+  [5/38] reading SiomaBridgeWPC__20260722190030.mis
+  [6/38] reading SiomaBridgeWPC__20260722190108.mis
+  [7/38] reading SiomaBridgeWPC__20260722200030.mis
+  [8/38] reading SiomaBridgeWPC__20260722210030.mis
+  [9/38] reading SiomaBridgeWPC__20260722220030.mis
+  [10/38] reading SiomaBridgeWPC__20260722230030.mis
+  [11/38] reading SiomaBridgeWPC__20260722230530.mis
+  [12/38] reading SiomaBridgeWPC__20260723000030.mis
+  [13/38] reading SiomaBridgeWPC__20260723010030.mis
+  [14/38] reading SiomaBridgeWPC__20260723020030.mis
+  [15/38] reading SiomaBridgeWPC__20260723030030.mis
+  [16/38] reading SiomaBridgeWPC__20260723040030.mis
+  [17/38] reading SiomaBridgeWPC__20260723050030.mis
+  [18/38] reading SiomaBridgeWPC__20260723060030.mis
+  [19/38] reading SiomaBridgeWPC__20260723070030.mis
+  [20/38] reading SiomaBridgeZRA__20260722150030.mis
+  [21/38] reading SiomaBridgeZRA__20260722160030.mis
+  [22/38] reading SiomaBridgeZRA__20260722160059.mis
+  [23/38] reading SiomaBridgeZRA__20260722170030.mis
+  [24/38] reading SiomaBridgeZRA__20260722180030.mis
+  [25/38] reading SiomaBridgeZRA__20260722190030.mis
+  [26/38] reading SiomaBridgeZRA__20260722190059.mis
+  [27/38] reading SiomaBridgeZRA__20260722200030.mis
+  [28/38] reading SiomaBridgeZRA__20260722210030.mis
+  [29/38] reading SiomaBridgeZRA__20260722220030.mis
+  [30/38] reading SiomaBridgeZRA__20260722220059.mis
+  [31/38] reading SiomaBridgeZRA__20260722220108.mis
+  [32/38] reading SiomaBridgeZRA__20260722230030.mis
+  [33/38] reading SiomaBridgeZRA__20260723000030.mis
+  [34/38] reading SiomaBridgeZRA__20260723010030.mis
+  [35/38] reading SiomaBridgeZRA__20260723020030.mis
+  [36/38] reading SiomaBridgeZRA__20260723030030.mis
+  [37/38] reading SiomaBridgeZRA__20260723040030.mis
+  [38/38] reading SiomaBridgeZRA__20260723050030.mis
+Merging 1 month(s) into monthly CSVs...
+  [month 202607] 68 interval(s) from this run -> SiomaBridge_202607.csv
+Archiving 38 processed raw file(s) into /mnt/data/gauge-data/processed...
+node:fs:562
+  return binding.open(
+                 ^
+
+Error: EACCES: permission denied, open '/mnt/data/gauge-data/processed/202607/SiomaBridgeWPC__20260722150030.mis'
+    at Object.openSync (node:fs:562:18)
+    at Object.writeFileSync (node:fs:2440:35)
+    at moveFile (file:///home/ubuntu/ngonye-gauges/lib/process_raw.js:74:8)
+    at main (file:///home/ubuntu/ngonye-gauges/lib/process_raw.js:216:5)
+    at file:///home/ubuntu/ngonye-gauges/lib/process_raw.js:236:1
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:116:5) {
+  errno: -13,
+  code: 'EACCES',
+  syscall: 'open',
+  path: '/mnt/data/gauge-data/processed/202607/SiomaBridgeWPC__20260722150030.mis'
+}
+
+Node.js v22.15.1
+2026-07-23 06:02:02 process_raw.js FAILED (exit 1) - aborting before build_annual_summaries.js
+2026-07-23 06:05:14 === daily_update start (RAW_DIR=/home/wpc_ftp OUT_DIR=/mnt/data/gauge-data) ===
+RAW_DIR = /home/wpc_ftp
+OUT_DIR = /mnt/data/gauge-data
+Found 41 raw .mis file(s) in /home/wpc_ftp
+  [1/41] reading SiomaBridgeWPC__20260722150030.mis
+  [2/41] reading SiomaBridgeWPC__20260722160030.mis
+  [3/41] reading SiomaBridgeWPC__20260722170030.mis
+  [4/41] reading SiomaBridgeWPC__20260722180030.mis
+  [5/41] reading SiomaBridgeWPC__20260722190030.mis
+  [6/41] reading SiomaBridgeWPC__20260722190108.mis
+  [7/41] reading SiomaBridgeWPC__20260722200030.mis
+  [8/41] reading SiomaBridgeWPC__20260722210030.mis
+  [9/41] reading SiomaBridgeWPC__20260722220030.mis
+  [10/41] reading SiomaBridgeWPC__20260722230030.mis
+  [11/41] reading SiomaBridgeWPC__20260722230530.mis
+  [12/41] reading SiomaBridgeWPC__20260723000030.mis
+  [13/41] reading SiomaBridgeWPC__20260723010030.mis
+  [14/41] reading SiomaBridgeWPC__20260723020030.mis
+  [15/41] reading SiomaBridgeWPC__20260723030030.mis
+  [16/41] reading SiomaBridgeWPC__20260723040030.mis
+  [17/41] reading SiomaBridgeWPC__20260723050030.mis
+  [18/41] reading SiomaBridgeWPC__20260723060030.mis
+  [19/41] reading SiomaBridgeWPC__20260723070030.mis
+  [20/41] reading SiomaBridgeZRA__20260722150030.mis
+  [21/41] reading SiomaBridgeZRA__20260722160030.mis
+  [22/41] reading SiomaBridgeZRA__20260722160059.mis
+  [23/41] reading SiomaBridgeZRA__20260722170030.mis
+  [24/41] reading SiomaBridgeZRA__20260722180030.mis
+  [25/41] reading SiomaBridgeZRA__20260722190030.mis
+  [26/41] reading SiomaBridgeZRA__20260722190059.mis
+  [27/41] reading SiomaBridgeZRA__20260722200030.mis
+  [28/41] reading SiomaBridgeZRA__20260722210030.mis
+  [29/41] reading SiomaBridgeZRA__20260722220030.mis
+  [30/41] reading SiomaBridgeZRA__20260722220059.mis
+  [31/41] reading SiomaBridgeZRA__20260722220108.mis
+  [32/41] reading SiomaBridgeZRA__20260722230030.mis
+  [33/41] reading SiomaBridgeZRA__20260723000030.mis
+  [34/41] reading SiomaBridgeZRA__20260723010030.mis
+  [35/41] reading SiomaBridgeZRA__20260723020030.mis
+  [36/41] reading SiomaBridgeZRA__20260723030030.mis
+  [37/41] reading SiomaBridgeZRA__20260723040030.mis
+  [38/41] reading SiomaBridgeZRA__20260723050030.mis
+  [39/41] reading SiomaBridgeZRA__20260723080030.mis
+  [40/41] reading SiomaBridgeZRA__20260723080249.mis
+  [41/41] reading SiomaBridgeZRA__20260723080301.mis
+Merging 1 month(s) into monthly CSVs...
+  [month 202607] 72 interval(s) from this run -> SiomaBridge_202607.csv
+Archiving 41 processed raw file(s) into /mnt/data/gauge-data/processed...
+Done. files=41 (empty=6, unreadable=0), valid readings=140, rejected=0, months written=1, rows updated=72, archived=41
+2026-07-23 06:05:15 process_raw.js OK
+OUT_DIR = /mnt/data/gauge-data
+Rebuilding annual water-year summaries...
+  Aggregating 21 monthly CSV(s)
+  [WY2024-2025] 364 day(s) through 2025-09-30 -> SiomaBridge_WY2024-2025.csv
+  [WY2025-2026] 295 day(s) through 2026-07-22 -> SiomaBridge_WY2025-2026.csv
+Done. annual files=2
+2026-07-23 06:05:16 build_annual_summaries.js OK
+2026-07-23 06:05:16 === daily_update done ===
